@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Muli', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  width: 90vw;
+}
+
+.panel {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+  border-radius: 50px;
+  color: #fff;
+  cursor: pointer;
+  flex: 0.5;
+  margin: 10px;
+
+  /* Achei legal que ao salvar o arquivo usando o Live Server no VSCode
+  a animação é executada no browser, podendo ver o efeito na hora */
+  transition: flex 0.7s ease-in;
+
+  /* Para usar "position: absolute" nos filhos (h3) o pai (div) precisa
+  ser definido com "position: relative" */
+  position: relative;
+}
+
+.panel h3 {
+  font-size: 24px;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  margin: 0;
+  opacity: 0;
+}
+
+.panel.active {
+  flex: 5;
+}
+
+/* Exibir o texto somente no card expandido */
+.panel.active h3 {
+  opacity: 1;
+  transition: opacity 0.3s ease-in 0.4s;
+}
+
+/* Aplica os estilos abaixo quando o tamanho em tela
+for menor que o valor definido (novidade para mim! \o/) - no tutorial
+foi definido com 480px, mas meu Chrome está com o min-width em 500px ¬¬ */
+@media (max-width: 600px) {
+  /* O container muda de 90vw para 100vw, assim ocupando largura maior */
+  .container {
+    width: 100vw;
+  }
+
+  /* Temos 5 "panel" no HTML e escondemos
+  os 2 últimos (4 e 5) em telas pequenas - com certeza isso
+  pode ser dinâmico em alguma situação, pois "perde-se" esses panels
+  no código atual */
+  .panel:nth-of-type(4),
+  .panel:nth-of-type(5) {
+    display: none;
+  }
+}
