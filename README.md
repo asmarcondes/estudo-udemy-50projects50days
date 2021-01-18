@@ -9,7 +9,14 @@
   - Alterar os estilo de acordo com o tamanho da tela (@media > max-width);
   - Alterar o estilo de itens específicos dentro de uma lista de componentes "irmãos" (nth-of-type);
   - Adicionar e remover classe dinamicamente com JS (já tinha feito, mas não lembrava);
-- [ ] Day 2 - Progress Steps
+- [x] Day 2 - Progress Steps
+  - Definição de variável com escopo;
+  - Adição de conteúdo com o selector _::before_;
+  - Reposicionamento de um item com _translateY()_;
+  - Ajuste de profundidade (front/back) com _z-index_;
+  - Alteração de tamanho de um item com _scale()_;
+  - Acessar estilo para estados do botão - _active_, _focus_ e _disabled_;
+  - Alterar uma propriedade do estilo pelo JS (progress.style.width);
 - [ ] Day 3 - Rotating Navigation
 - [ ] Day 4 - Hidden Search Widget
 - [ ] Day 5 - Blurry Loading
