@@ -17,7 +17,11 @@
   - Alteração de tamanho de um item com _scale()_;
   - Acessar estilo para estados do botão - _active_, _focus_ e _disabled_;
   - Alterar uma propriedade do estilo pelo JS (progress.style.width);
-- [ ] Day 3 - Rotating Navigation
+- [x] Day 3 - Rotating Navigation
+  - Alteração do ponto de origem do _transform_ com ```transform-origin```;
+  - Remoção dos _bullets_ de uma lista com ```list-style-type: none```;
+  - Colocar todas as letras do texto em caixa alta com CSS, utilizando ```text-transform```;
+  - Operador "+" no CSS, que aponta para o primeiro elemento após um outro (ex.: ```div + p```, primeiro ```p``` depois de uma ```div```);
 - [ ] Day 4 - Hidden Search Widget
 - [ ] Day 5 - Blurry Loading
 - [ ] Day 6 - Scroll Animation
